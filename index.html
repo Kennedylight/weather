@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="z-30 absolute w-full h-screen">
+        <img src="./img/meteo.jpeg" class="w-full h-full object-cover" alt="">
+    </div>
+
+    <div class="z-40 absolute flex flex-col bg-black/50 w-full h-screen">
+        <div class="flex justify-center items-center w-full h-[10%]">
+            <div class="w-[50%]">
+                <select id="cities"
+                    class="block bg-white mt-1 px-3 py-2 border border-gray-300 focus:border-blue-500 rounded-lg focus:ring-blue-500 w-full text-gray-900">
+
+                </select>
+            </div>
+
+        </div>
+        <div class="flex justify-center items-center w-full h-[80%] text-white" id="acceuil">
+            <div class="space-y-2">
+                <h1 class="font-bold text-[24px] lg:text-[80px] text-center capitalize">welcome our page </h1>
+                <p class="text-center"> select a city and see the weather for the week <br> in that city</p>
+
+            </div>
+        </div>
+        <div class="hidden justify-center items-center w-full h-12 lg:h-[10%] affichage">
+            <div class="flex space-x-4 mt-5 lg:mt-0 font-bold text-[17px] text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                </svg>
+
+
+                <p id="city">Douala</p>
+            </div>
+
+        </div>
+        <div class="hidden justify-center w-full h-[1px] affichage">
+            <div class="flex justify-center bg-white w-[90%] h-[100%]"> </div>
+        </div>
+        <div class="hidden justify-center items-center w-full h-auto lg:h-[40%] text-white affichage">
+            <div class="lg:flex w-full lg:w-[90%] h-full">
+                <div class="flex justify-center items-center w-full lg:w-1/2 h-44 lg:h-full">
+                    <p class="text-[50px] lg:text-[160px]" id="image"></p>
+                </div>
+                <div class="px-5 w-full lg:w-1/2 lg:h-full">
+                    <div class="w-full h-[45%]">
+                        <p class="font-extralight lg:text-left text-center" id="dateNow">Aug 34 saturnd</p>
+                        <p class="font-bold text-[60px] lg:text-left text-center" id="heure">22 : 40</p>
+                    </div>
+                    <div class="w-full h-[55%]">
+                        <div class="w-full lg:w-[45%] h-full">
+                            <p class="font-bold text-[60px] lg:text-left text-center" id="temperature">27&deg</p>
+                            <p class="font-extralight lg:text-left text-center" id="longitude">Hi : 2&deg</p>
+                            <p class="font-extralight lg:text-left text-center" id="latitude">Lo: 19&deg</p>
+                        </div>
+                        <div class="w-[55%] h-full"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="hidden justify-center w-full h-[1px] affichage">
+            <div class="bg-white w-[90%] h-[100%]"></div>
+        </div>
+        <div class="hidden justify-center items-center bg-black/80 lg:bg-transparent px-4 py-4 w-full h-auto lg:h-[40%] affichage" >
+            <div class="lg:flex gap-2 space-y-4 lg:space-y-0 w-[100%] h-full" id="AllDays">
+                
+
+
+            </div>
+
+
+        </div>
+        <div class="flex justify-center items-center bg-black w-full h-12 lg:h-[10%] text-white text-center">
+            <p>© Copyright 2025 Kennedy light</p>
+        </div>
+    </div>
+
+
+    </div>
+    <script src="./js/tailwind.js"></script>
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>
