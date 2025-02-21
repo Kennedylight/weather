@@ -79,7 +79,7 @@ cities.addEventListener('change', (event) => {
     let results =null
     const [lat, lon, name] = event.target.value.split(",");
     console.log(event.target.value) // Sépare latitude et longitude
-    const url = `http://www.7timer.info/bin/api.pl?lon=${lon}&lat=${lat}&product=civillight&output=json`;
+    const url = `https://www.7timer.info/bin/api.pl?lon=${lon}&lat=${lat}&product=civillight&output=json`;
 
     fetch(url)
       .then(response => response.json()) 
@@ -146,8 +146,6 @@ const dateString = '20250221';
 const year = dateString.substring(0, 4);
 const month = dateString.substring(4, 6);
 const day = dateString.substring(6, 8);
-
-const date = new Date(`${year}-${month}-${day}`);
 
 const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
